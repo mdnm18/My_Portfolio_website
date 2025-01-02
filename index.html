@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="MD NAYAJ MONDAL - Web Developer and Designer specializing in responsive web design, UI/UX, and application development">
+  <meta name="keywords" content="web development, design, portfolio, UI/UX, app design, MD NAYAJ MONDAL">
+  <meta name="author" content="MD NAYAJ MONDAL">
+  <meta name="theme-color" content="#9a26dc">
+  <meta property="og:title" content="MD NAYAJ MONDAL | Portfolio">
+  <meta property="og:description"
+    content="Web Developer and Designer specializing in responsive web design, UI/UX, and application development">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="IMAGES THAT ARE USED IN MY PROTFOLIO\avatar.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>MD NAYAJ MONDAL | Portfolio</title>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="preloader">
+    <svg width="50" height="50" viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="20" fill="none" stroke="#9a26dc" stroke-width="5">
+        <animate attributeName="stroke-dasharray" dur="1.5s" repeatCount="indefinite" values="1,150;90,150;90,150" />
+        <animate attributeName="stroke-dashoffset" dur="1.5s" repeatCount="indefinite" values="0;-35;-124" />
+      </circle>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div class="clock-container">
+        <div id="clock">00 : 00 : 00</div>
+        <div class="date" id="date">Loading...</div>
+      </div>
+      <div class="nav__brand">
+        <a href="index.html" class="nav__logo">MD NAYAJ MONDAL</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#service" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#mywork" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#myachievements" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
+        </ul>
+      </div>
+      <!-- Theme Switcher -->
+      <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle" class="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+          <i class='bx bx-sun'></i>
+          <i class='bx bx-moon'></i>
+        </label>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!-- Home Section -->
+    <section class="home bd-grid section" id="home">
+      <div class="home__data reveal">
+        <h1 class="home__title">Hi,<br>I am <span class="home__title-color"><b>MD. NAYAJ MONDAL</b></span></h1>
+        <p class="home__description"><span>A Software Engineer in Making</span></p>
+        <a href="https://docs.google.com/document/d/17WMGhArkdNitc2nNAhPpuNsryvCLV6Vo/edit?usp=drivesdk&ouid=106089075348425734571&rtpof=true&sd=true"
+          class="button" target="_blank">Download CV</a>
+        <a href="https://drive.google.com/file/d/1KiYperwcPgJjgaqu0_FmYLKEgHymEme5/view?usp=drivesdk" class="button"
+          target="_blank">Contact Details</a>
+      </div>
+
+      <div class="home__img reveal">
+        <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\IMG_0565.DNG" alt="bb.png">
+      </div>
+
+      <div class="home__social">
+        <a href="https://www.md.n.m.pius18@gmail.com" class="home__social-icon" target="_blank" rel="noopener">
+          <i class="fa-duotone fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/mdnm18" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://www.discordapp.com/users/1241062535994806393" class="home__social-icon" target="_blank"
+          rel="noopener">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com/MD_N_M_18" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.instagram.com/md._n.m._india_18" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.facebook.com/mdnayaj.mondal" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://www.t.me/Md_NM_18_indian" class="home__social-icon" target="_blank" rel="noopener">
+          <i class='bx bxl-telegram'></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\IMG_0553.DNG" alt="ppp.jpg">
+        </div>
+
+        <div class="about__content reveal">
+          <h3 class="about__subtitle">Web Developer & Designer</h3>
+          <p class="about__text">
+            Hello 🤗! I am MD Nayaj Mondal, an 18-year-old student from Malda, West Bengal, India.<br>
+
+            I successfully completed my <b>Secondary Examination</b> with an A+ grade under the West Bengal Board of
+            Secondary Education (WBBSE) in 2022 from Guidance Academy. I went on to achieve an A grade in my <b>Higher
+              Secondary Examination</b> under the West Bengal Council of Higher Secondary Education (WBCHSE) in 2024,
+            also from
+            <b>Guidance Academy (Jangipur Campus)</b>, Murshidabad, West Bengal.<br>
+
+            In addition, I have completed a <b>Diploma in Computer Application</b> under the authorization of the “North
+            Bengal Society for Computer Education” at ITF Computer World Institute for the session 2022-2023.<br> 
+
+            Currently, I am pursuing a <b>B.Tech. degree in Computer Science and Engineering (CSE)</b> at <b>SRM
+              Institute of Science & Technology (KTR Campus)</b>, Chennai, Tamil Nadu, India.
+          </p>
+          <p class="about__text">
+            I am a dynamic web developer with a passion for crafting immersive digital experiences that captivate and
+            inspire.
+            Blending a keen eye for design with a deep love for coding, I transform ideas into interactive realities.
+            Proficient in
+            both <b>front-end</b> artistry and <b>back-end</b> precision, I deliver solutions that seamlessly merge
+            functionality
+            with stunning visual appeal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="service section" id="service">
+      <h2 class="section-title reveal">My Skills</h2>
+
+      <div class="service__container bd-grid">
+        <div class="service__card reveal">
+          <i class='bx bx-layout service__icon'></i>
+          <h3 class="service__title">Web Design</h3>
+          <p class="service__description">
+            Creating visually striking, seamlessly intuitive, and performance-driven websites designed to leave a
+            lasting impression
+            and elevate user experiences.
+          </p>
+        </div>
+
+        <div class="service__card reveal">
+          <i class='bx bx-mobile-alt service__icon'></i>
+          <h3 class="service__title">App Design</h3>
+          <p class="service__description">
+            Designing innovative and user-centric mobile applications that seamlessly blend exceptional functionality
+            with modern design principles, delivering unparalleled user experiences.
+          </p>
+        </div>
+
+        <div class="service__card reveal">
+          <i class='bx bx-palette service__icon'></i>
+          <h3 class="service__title">UI/UX Design</h3>
+          <p class="service__description">
+            Crafting intuitive user experiences and visually compelling interfaces that drive engagement, foster
+            satisfaction, and
+            elevate digital interactions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work section" id="mywork">
+      <h2 class="section-title reveal">My Projects</h2>
+
+      <div class="work__container bd-grid">
+        <div class="work__card reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\6.jpg" alt="Project 1" class="work__img">
+          <div class="work__overlay">
+            <h3 class="work__title">Web Development </h3>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+          </div>
+        </div>
+
+        <div class="work__card reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\3.jpg" alt="Project 2" class="work__img">
+          <div class="work__overlay">
+            <h3 class="work__title">App Development</h3>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+          </div>
+        </div>
+
+        <div class="work__card reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\4.jpg" alt="Project 3" class="work__img">
+          <div class="work__overlay">
+            <h3 class="work__title">UI/UX Design</h3>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- certificates Section-->
+
+    <section class="Certificate section" id="myachievements">
+      <h2 class="section-title reveal">My Certificates</h2>
+      <div class="certificate__container bd-grid">
+        <div class="certificate__card reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\9.jpg" alt="Technical Certificate" class="certificate__img">
+          <div class="certificate__overlay">
+            <h3 class="certificate__title"><b>TECHNICAL CERTIFICATES</b></h3>
+            <a href="https://drive.google.com/drive/folders/1MjCBEXbqdkepSHkHB0PvJmSqes3sSbpD" class="certificate__link"
+              target="_blank">View All Certificates</a>
+          </div>
+        </div>
+        <div class="certificate__card reveal">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\1.jpg" alt="Non-Technical Certificate"
+            class="certificate__img">
+          <div class="certificate__overlay">
+            <h3 class="certificate__title"><b>NON-TECHNICAL CERTIFICATES</b></h3>
+            <a href="https://drive.google.com/drive/folders/1ZBYt3DCimBOaP8ckjx9-vE11jR_KEElR" class="certificate__link"
+              target="_blank">View All Certificates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title reveal">Contact Me</h2>
+
+      <div class="contact__container bd-grid">
+        <form action=" " method="POST" id="contact-form" class="contact__form reveal">
+          <div class="contact__input-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" class="contact__input" required>
+          </div>
+          <div class="contact__input-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" class="contact__input" required>
+          </div>
+          <div class="contact__input-group">
+            <textarea name="message" id="message" placeholder="Your Message" class="contact__input" required></textarea>
+          </div>
+          <button type="submit" class="button contact__button">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container bd-grid">
+      <div class="footer__content">
+        <h3 class="footer__title">MD NAYAJ MONDAL</h3>
+        <p class="footer__description">Web Developer & Designer</p>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://www.md.n.m.pius18@gmail.com" class="footer__icon" target="_blank" rel="noopener">
+          <i class="fa-duotone fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/mdnm18" class="footer__icon" target="_blank" rel="noopener">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="footer__icon" target="_blank" rel="noopener">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://www.discord.com/users/1241062535994806393" class="footer__icon" target="_blank" rel="noopener">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://x.com/MD_N_M_18" class="footer__icon" target="_blank" rel="noopener">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.instagram.com/md._n.m._india_18" class="footer__icon" target="_blank" rel="noopener">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.facebook.com/mdnayaj.mondal" class="footer__icon" target="_blank" rel="noopener">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://www.t.me/Md_NM_18_indian" class="footer_icon" target="_blank" rel="noopener">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer__copy">&#169; 2025 MD NAYAJ MONDAL. All rights reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
