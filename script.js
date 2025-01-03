@@ -189,3 +189,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//contact form:
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzrJb34-CsgSPcOFhWrUK2_lqSoQXqekzkIJqlEi9EZwFekjxFCxkzaM8O1rKwC3WZLjw/exec";
+const form = document.forms["google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) =>
+      alert("Thanks for Contacting me..! I Will Contact You Soon...")
+    )
+    .catch((error) => console.error("Error!", error.message));
+});

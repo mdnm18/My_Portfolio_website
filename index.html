@@ -39,7 +39,7 @@
         <div class="date" id="date">Loading...</div>
       </div>
       <div class="nav__brand">
-        <a href="index.html" class="nav__logo">MD NAYAJ MONDAL</a>
+        <a href="index.html" class="nav__logo"><i class='fas fa-user-shield' style='font-size:40px'></i></a>
       </div>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
@@ -131,7 +131,7 @@
             <b>Guidance Academy (Jangipur Campus)</b>, Murshidabad, West Bengal.<br>
 
             In addition, I have completed a <b>Diploma in Computer Application</b> under the authorization of the “North
-            Bengal Society for Computer Education” at ITF Computer World Institute for the session 2022-2023.<br> 
+            Bengal Society for Computer Education” at ITF Computer World Institute for the session 2022-2023.<br>
 
             Currently, I am pursuing a <b>B.Tech. degree in Computer Science and Engineering (CSE)</b> at <b>SRM
               Institute of Science & Technology (KTR Campus)</b>, Chennai, Tamil Nadu, India.
@@ -246,17 +246,18 @@
       <h2 class="section-title reveal">Contact Me</h2>
 
       <div class="contact__container bd-grid">
-        <form action=" " method="POST" id="contact-form" class="contact__form reveal">
+        <form method="POST" name="google-sheet" id="contact-form" class="contact__form reveal">
           <div class="contact__input-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" class="contact__input" required>
+            <input type="text" id="name" name="Name" placeholder="Your Name" class="contact__input" required>
           </div>
           <div class="contact__input-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" class="contact__input" required>
+            <input type="email" id="email" name="Email" placeholder="Your Email" class="contact__input" required>
           </div>
           <div class="contact__input-group">
-            <textarea name="message" id="message" placeholder="Your Message" class="contact__input" required></textarea>
+            <textarea id="message" name="Messages" placeholder="Your Message" class="contact__input" row="4"
+              required></textarea>
           </div>
-          <button type="submit" class="button contact__button">
+          <button type="submit" class="button contact__button" value="submit_form" name="Submit">
             Send Message
           </button>
         </form>
