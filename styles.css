@@ -88,6 +88,7 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 1.25rem;
+  font-weight: bolder;
   transition: all var(--transition-fast) var(--cubic-bounce);
 }
 
@@ -194,7 +195,8 @@ img {
   left: 0;
   z-index: 100;
   background-color: gainsboro;
-  color: #0f172a;
+  color:  black;
+  font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition-medium) var(--cubic-smooth);
   transition: all 0.3s;
@@ -699,9 +701,21 @@ img {
   box-shadow: 0 5px 15px rgba(154, 38, 220, 0.1);
 }
 
+input[type="text"]{
+  color:black;
+  font-weight: bold;
+}
+
+input[type="email"]{
+  color:black;
+  font-weight: bold;
+}
+
 textarea.contact__input {
   resize: none;
   height: 200px;
+  color:black;
+  font-weight: bold;
 }
 
 /* Button */
