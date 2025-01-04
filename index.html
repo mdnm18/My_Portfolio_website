@@ -35,32 +35,32 @@
   <header class="l-header">
     <nav class="nav bd-grid">
       <div class="clock-container">
-        <div id="clock">00 : 00 : 00</div>
-        <div class="date" id="date">Loading...</div>
+        <div id="clock" onclick="triggerVibration()">00 : 00 : 00</div>
+        <div class="date" id="date" onclick="triggerVibration()">Loading...</div>
       </div>
       <div class="nav__brand">
-        <a href="index.html" class="nav__logo"><i class='fas fa-user-shield' style='font-size:40px'></i></a>
+        <a href="index.html" class="nav__logo"><i class='fas fa-user-shield' style='font-size:40px' onclick="triggerVibration()"></i></a>
       </div>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#service" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#mywork" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#myachievements" class="nav__link">Achievements</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link active" onclick="triggerVibration()">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link" onclick="triggerVibration()">About</a></li>
+          <li class="nav__item"><a href="#service" class="nav__link" onclick="triggerVibration()">Skills</a></li>
+          <li class="nav__item"><a href="#mywork" class="nav__link" onclick="triggerVibration()">Projects</a></li>
+          <li class="nav__item"><a href="#myachievements" class="nav__link" onclick="triggerVibration()">Achievements</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link" onclick="triggerVibration()">Contacts</a></li>
         </ul>
       </div>
       <!-- Theme Switcher -->
       <div class="theme-switch">
         <input type="checkbox" id="theme-toggle" class="theme-toggle">
         <label for="theme-toggle" class="theme-label">
-          <i class='bx bx-sun'></i>
-          <i class='bx bx-moon'></i>
+          <i class='bx bx-sun' onclick="triggerVibration()"></i>
+          <i class='bx bx-moon' onclick="triggerVibration()"></i>
         </label>
       </div>
       <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
+        <i class='bx bx-menu' onclick="triggerVibration()"></i>
       </div>
     </nav>
   </header>
@@ -72,9 +72,9 @@
         <h1 class="home__title">Hi,<br>I am <span class="home__title-color"><b>MD. NAYAJ MONDAL</b></span></h1>
         <p class="home__description"><span>A Software Engineer in Making</span></p>
         <a href="https://docs.google.com/document/d/17WMGhArkdNitc2nNAhPpuNsryvCLV6Vo/edit?usp=drivesdk&ouid=106089075348425734571&rtpof=true&sd=true"
-          class="button" target="_blank">Download CV</a>
+          class="button" target="_blank" onclick="triggerVibration()">Download CV</a>
         <a href="https://drive.google.com/file/d/1KiYperwcPgJjgaqu0_FmYLKEgHymEme5/view?usp=drivesdk" class="button"
-          target="_blank">Contact Details</a>
+          target="_blank" onclick="triggerVibration()">Contact Details</a>
       </div>
 
       <div class="home__img reveal">
@@ -83,36 +83,36 @@
 
       <div class="home__social">
         <a href="https://www.md.n.m.pius18@gmail.com" class="home__social-icon" target="_blank" rel="noopener">
-          <i class="fa-duotone fa-solid fa-envelope"></i>
+          <i class="fa-duotone fa-solid fa-envelope" onclick="triggerVibration()"></i>
         </a>
         <a href="https://github.com/mdnm18" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-github'></i>
+          <i class='bx bxl-github' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-linkedin'></i>
+          <i class='bx bxl-linkedin' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.discordapp.com/users/1241062535994806393" class="home__social-icon" target="_blank"
           rel="noopener">
-          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-discord" onclick="triggerVibration()"></i>
         </a>
         <a href="https://x.com/MD_N_M_18" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-twitter' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.instagram.com/md._n.m._india_18" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-instagram' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.facebook.com/mdnayaj.mondal" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-facebook'></i>
+          <i class='bx bxl-facebook' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.t.me/Md_NM_18_indian" class="home__social-icon" target="_blank" rel="noopener">
-          <i class='bx bxl-telegram'></i>
+          <i class='bx bxl-telegram' onclick="triggerVibration()"></i>
         </a>
       </div>
     </section>
 
     <!-- About Section -->
     <section class="about section" id="about">
-      <h2 class="section-title reveal">About Me</h2>
+      <h2 class="section-title reveal" onclick="triggerVibration()">About Me</h2>
 
       <div class="about__container bd-grid">
         <div class="about__img reveal">
@@ -151,9 +151,9 @@
 
     <!-- Services Section -->
     <section class="service section" id="service">
-      <h2 class="section-title reveal">My Technical Skills</h2>
+      <h2 class="section-title reveal" onclick="triggerVibration()">My Technical Skills</h2>
 
-      <div class="service__container bd-grid">
+      <div class="service__container bd-grid" onclick="triggerVibration()">
         <div class="service__card reveal">
           <i class='bx bx-layout service__icon'></i>
           <h3 class="service__title">Web Design</h3>
@@ -164,7 +164,7 @@
           </p>
         </div>
 
-        <div class="service__card reveal">
+        <div class="service__card reveal" onclick="triggerVibration()">
           <i class='bx bx-mobile-alt service__icon'></i>
           <h3 class="service__title">App Design</h3>
           <p class="service__description">
@@ -173,7 +173,7 @@
           </p>
         </div>
 
-        <div class="service__card reveal">
+        <div class="service__card reveal" onclick="triggerVibration()">
           <i class='bx bx-palette service__icon'></i>
           <h3 class="service__title">UI/UX Design</h3>
           <p class="service__description">
@@ -187,30 +187,30 @@
 
     <!-- Work Section -->
     <section class="work section" id="mywork">
-      <h2 class="section-title reveal">My Projects</h2>
+      <h2 class="section-title reveal" onclick="triggerVibration()">My Projects</h2>
 
       <div class="work__container bd-grid">
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\6.jpg" alt="Project 1" class="work__img">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\6.jpg" alt="Project 1" class="work__img" onclick="triggerVibration()">
           <div class="work__overlay">
             <h3 class="work__title">Web Development </h3>
-            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank" onclick="triggerVibration()">View Details</a>
           </div>
         </div>
 
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\3.jpg" alt="Project 2" class="work__img">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\3.jpg" alt="Project 2" class="work__img" onclick="triggerVibration()">
           <div class="work__overlay">
             <h3 class="work__title">App Development</h3>
-            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank" onclick="triggerVibration()">View Details</a>
           </div>
         </div>
 
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\4.jpg" alt="Project 3" class="work__img">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\4.jpg" alt="Project 3" class="work__img" onclick="triggerVibration()">
           <div class="work__overlay">
             <h3 class="work__title">UI/UX Design</h3>
-            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank">View Details</a>
+            <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank" onclick="triggerVibration()">View Details</a>
           </div>
         </div>
       </div>
@@ -219,23 +219,23 @@
     <!-- certificates Section-->
 
     <section class="Certificate section" id="myachievements">
-      <h2 class="section-title reveal">My Certificates</h2>
+      <h2 class="section-title reveal" onclick="triggerVibration()">My Certificates</h2>
       <div class="certificate__container bd-grid">
         <div class="certificate__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\9.jpg" alt="Technical Certificate" class="certificate__img">
+          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\9.jpg" alt="Technical Certificate" class="certificate__img" onclick="triggerVibration()">
           <div class="certificate__overlay">
             <h3 class="certificate__title"><b>TECHNICAL CERTIFICATES</b></h3>
             <a href="https://drive.google.com/drive/folders/1MjCBEXbqdkepSHkHB0PvJmSqes3sSbpD" class="certificate__link"
-              target="_blank">View All Certificates</a>
+              target="_blank" onclick="triggerVibration()">View All Certificates</a>
           </div>
         </div>
         <div class="certificate__card reveal">
           <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\1.jpg" alt="Non-Technical Certificate"
-            class="certificate__img">
+            class="certificate__img" onclick="triggerVibration()">
           <div class="certificate__overlay">
             <h3 class="certificate__title"><b>NON-TECHNICAL CERTIFICATES</b></h3>
             <a href="https://drive.google.com/drive/folders/1ZBYt3DCimBOaP8ckjx9-vE11jR_KEElR" class="certificate__link"
-              target="_blank">View All Certificates</a>
+              target="_blank" onclick="triggerVibration()">View All Certificates</a>
           </div>
         </div>
       </div>
@@ -243,21 +243,24 @@
 
     <!-- Contact Section -->
     <section class="contact section" id="contact">
-      <h2 class="section-title reveal">Contact Me</h2>
+      <h2 class="section-title reveal" onclick="triggerVibration()">Contact Me</h2>
 
       <div class="contact__container bd-grid">
         <form method="POST" name="google-sheet" id="contact-form" class="contact__form reveal">
           <div class="contact__input-group">
-            <input type="text" id="name" name="Name" placeholder="Your Name" class="contact__input" required>
+            <input type="text" id="name" name="Name" placeholder="Enter Your Name" class="contact__input" onclick="triggerVibration()" required>
           </div>
           <div class="contact__input-group">
-            <input type="email" id="email" name="Email" placeholder="Your Email" class="contact__input" required>
+            <input type="email" id="email" name="Email" placeholder="Enter Your Email Id" class="contact__input" onclick="triggerVibration()" required>
           </div>
           <div class="contact__input-group">
-            <textarea id="message" name="Messages" placeholder="Your Message" class="contact__input" row="4"
+            <input type="tel" id="ph" name="Phone_No." placeholder="Enter Your Phone Number" class="contact__input" onclick="triggerVibration()" required>
+          </div>
+          <div class="contact__input-group">
+            <textarea id="message" name="Messages" placeholder="Type Your Message or Feedback on the basis of your User Experience" class="contact__input" row="4" onclick="triggerVibration()"
               required></textarea>
           </div>
-          <button type="submit" class="button contact__button" value="submit_form" name="Submit">
+          <button type="submit" class="button contact__button" value="submit_form" name="Submit" onclick="triggerVibration()">
             Send Message
           </button>
         </form>
@@ -268,34 +271,34 @@
   <footer class="footer">
     <div class="footer__container bd-grid">
       <div class="footer__content">
-        <h3 class="footer__title">MD NAYAJ MONDAL</h3>
+        <h3 class="footer__title" onclick="triggerVibration()">MD NAYAJ MONDAL</h3>
         <p class="footer__description">Software Developer & Designer</p>
       </div>
 
       <div class="footer__social">
         <a href="https://www.md.n.m.pius18@gmail.com" class="footer__icon" target="_blank" rel="noopener">
-          <i class="fa-duotone fa-solid fa-envelope"></i>
+          <i class="fa-duotone fa-solid fa-envelope" onclick="triggerVibration()"></i>
         </a>
         <a href="https://github.com/mdnm18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-github'></i>
+          <i class='bx bxl-github' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-linkedin'></i>
+          <i class='bx bxl-linkedin' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.discord.com/users/1241062535994806393" class="footer__icon" target="_blank" rel="noopener">
-          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-discord" onclick="triggerVibration()"></i>
         </a>
         <a href="https://x.com/MD_N_M_18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-twitter' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.instagram.com/md._n.m._india_18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-instagram' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.facebook.com/mdnayaj.mondal" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-facebook'></i>
+          <i class='bx bxl-facebook' onclick="triggerVibration()"></i>
         </a>
         <a href="https://www.t.me/Md_NM_18_indian" class="footer_icon" target="_blank" rel="noopener">
-          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-telegram" onclick="triggerVibration()"></i>
         </a>
       </div>
     </div>

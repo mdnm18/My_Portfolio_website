@@ -1,3 +1,12 @@
+//for Haptic-Feedback
+function triggerVibration() {
+  if (window.navigator.vibrate) {
+    window.navigator.vibrate([40]);
+  } else {
+    alert("Vibration API not supported by your browser.");
+  }
+}
+
 // Sparkle effect on mouse move
 // function createSparkle(e) {
 // const sparkle = document.createElement("div");
@@ -161,18 +170,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
     }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formProps.email)) {
-      alert("Please enter a valid email address");
-      return;
-    }
-
-    // Here you would typically send the form data to a server
-    // For now, we'll just show a success message
-    alert("Message sent successfully!");
-    contactForm.reset();
   });
 
   // Smooth scrolling for anchor links
@@ -192,14 +189,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //contact form:
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzrJb34-CsgSPcOFhWrUK2_lqSoQXqekzkIJqlEi9EZwFekjxFCxkzaM8O1rKwC3WZLjw/exec";
+  "https://script.google.com/macros/s/AKfycbz3BXom2OkKoXQNMyT8GQTn2WvoEkxXBX3woFG6gBRh7CrZqx9MdVGRBKeTeqn-aBao5A/exec";
 const form = document.forms["google-sheet"];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) =>
-      alert("Thanks for Contacting me..! I Will Contact You Soon...")
+      alert(
+        "Your Message or Feedback sent successfully! Thanks for Contacting MD. N.M.! He Will Contact You Soon..."
+      )
     )
     .catch((error) => console.error("Error!", error.message));
 });
