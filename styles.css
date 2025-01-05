@@ -1184,16 +1184,21 @@ textarea.contact__input {
   display:block;
   position:absolute;
   margin-top: 2px;
-  margin-left:140px;
+  left:48%;
 }
 
 @media screen and (max-width: 990px){
   .connect{
   display:block;
-  position:absolute;
-  margin-left:0px;
+  position: absolute;
+  left:18px;
   top:130px;
 }
+}
+@media screen and (min-width: 475px) and (max-width: 990px){
+  .connect{
+    top: 115px;
+  }
 }
 
 /* .sparkle { */
