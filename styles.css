@@ -1138,6 +1138,7 @@ textarea.contact__input {
 .footer__social {
   display: flex;
   gap: 1rem;
+  margin-left:2px;
 }
 
 .footer__icon {
@@ -1177,6 +1178,22 @@ textarea.contact__input {
 
 .footer__copy::after {
   right: 30%;
+}
+
+.connect{
+  display:block;
+  position:absolute;
+  margin-top: 2px;
+  margin-left:150px;
+}
+
+@media screen and (max-width: 576px){
+  .connect{
+  display:block;
+  position:absolute;
+  margin-left:0px;
+  top:140px;
+}
 }
 
 /* .sparkle { */
