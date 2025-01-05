@@ -1187,7 +1187,7 @@ textarea.contact__input {
   margin-left:150px;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 990px){
   .connect{
   display:block;
   position:absolute;
