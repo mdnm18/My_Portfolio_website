@@ -1184,7 +1184,7 @@ textarea.contact__input {
   display:block;
   position:absolute;
   margin-top: 2px;
-  margin-left:150px;
+  margin-left:140px;
 }
 
 @media screen and (max-width: 990px){
@@ -1192,7 +1192,7 @@ textarea.contact__input {
   display:block;
   position:absolute;
   margin-left:0px;
-  top:140px;
+  top:130px;
 }
 }
 
