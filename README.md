@@ -210,3 +210,83 @@ Breakpoints :
 - CSS Grid and Flexbox for layouts
 - Intersection Observer for animations
 - LocalStorage for theme persistence
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Portfolio Website Updates
+
+🆕 New Features
+
+Haptic Feedback Integration ::->
+Enhanced user interaction with haptic feedback implementation:
+- Provides tactile response on button clicks and form submissions
+- Improves overall user experience and interactivity
+- Makes the website more engaging and accessible
+
+Functional Contact Form ::->
+Implemented a fully operational contact form using Google services:
+- Backend : Google Apps Script for data processing
+- Storage : Google Sheets integration for secure data management
+- Features :
+  - Real-time form submission
+  - Automatic data storage in Google Sheets
+  - Server-side validation
+  - Spam protection
+
+🛠️ Technical Implementation
+
+Contact Form Setup ::->
+1. Google Apps Script Integration :
+   ```javascript
+   // Example endpoint configuration
+   const form = document.getElementById('contact-form');
+   form.addEventListener('submit', handleSubmit);
+   ```
+
+2. Google Sheets Configuration :
+   - Dedicated spreadsheet for storing contact submissions
+   - Automated timestamp and data organization
+   - Secure data handling
+
+Haptic Feedback Implementation
+```javascript
+// Example haptic feedback implementation
+function triggerHapticFeedback() {
+    if (navigator.vibrate) {
+        navigator.vibrate(50); // 50ms vibration
+    }
+}
+```
+📝 Usage
+Contact Form  ::->
+
+- Fill in the required fields (Name, Email, Message)
+- Submit the form
+- Receive confirmation of successful submission
+- Data is automatically stored in Google Sheets
+
+Haptic Feedback  ::->
+
+- Enabled by default on supported devices
+- Provides feedback on:
+            - Button clicks
+            - Form submissions
+            - Navigation actions
+
+🔒 Privacy & Security
+
+- All form submissions are securely stored in Google Sheets
+- Data encryption in transit
+- Regular backups and data protection measures
+- Compliance with data protection regulations
+
+🔄 Future Updates
+
+ - Enhanced form validation
+ - Custom haptic patterns for different interactions
+ - Analytics integration for form submissions
+ - Auto-response system for form submissions
+
+🤝 Contributing
+Feel free to submit issues and enhancement requests!
