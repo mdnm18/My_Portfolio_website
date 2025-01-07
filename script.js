@@ -188,17 +188,63 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //contact form:
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbz3BXom2OkKoXQNMyT8GQTn2WvoEkxXBX3woFG6gBRh7CrZqx9MdVGRBKeTeqn-aBao5A/exec";
-const form = document.forms["google-sheet"];
 
-form.addEventListener("submit", (e) => {
+let url =
+  "https://script.google.com/macros/s/AKfycbxkM4la2QZVhe3j-QitFxJsqDfxqZatwgjJbY9JCSU8VMrb-5sYLSeO3AefjQIcIbvgJQ/exec";
+let form = document.querySelector("#contact-form");
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) =>
-      alert(
-        "Your Message or Feedback sent successfully! Thanks for Contacting MD. N.M.! He Will Contact You Soon..."
-      )
-    )
-    .catch((error) => console.error("Error!", error.message));
+
+  // Show loading spinner
+  e.target.Submit.innerHTML = "Submitting...";
+  e.target.Submit.disabled = true;
+  let spinner = document.createElement("span");
+  spinner.classList.add("spinner");
+  e.target.Submit.appendChild(spinner);
+
+  let formData = new FormData(form);
+
+  try {
+    let response = await fetch(url, {
+      method: "POST",
+      body: formData,
+    });
+    let result = await response.text();
+
+    // Show result
+    document.getElementById("res").innerHTML = result;
+
+    // Reset form and button
+    form.reset();
+    setTimeout(() => {
+      document.getElementById("res").innerHTML = "";
+    }, 2000);
+  } catch (error) {
+    document.getElementById("res").innerHTML =
+      "An error occurred. Please try again.";
+  } finally {
+    // Reset submit button
+    e.target.Submit.innerHTML = "Send Message";
+    e.target.Submit.disabled = false;
+  }
 });
+
+// Add CSS for spinner
+const style = document.createElement('styles');
+style.innerHTML = `
+  .spinner {
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    border-top: 2px solid #fff; 
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+`;
+document.head.appendChild(style);
