@@ -31,36 +31,73 @@
     </svg>
   </div>
 
+
   <!-- Header -->
   <header class="l-header">
     <nav class="nav bd-grid">
+      <div class="nav__brand">
+        <a href="index.html" class="nav__logo">
+          <i class='fas fa-user-shield nav__logo-icon' onclick="triggerVibration()"></i>
+        </a>
+      </div>
+
       <div class="clock-container">
         <div id="clock" onclick="triggerVibration()">00 : 00 : 00</div>
         <div class="date" id="date" onclick="triggerVibration()">Loading...</div>
       </div>
-      <div class="nav__brand">
-        <a href="index.html" class="nav__logo"><i class='fas fa-user-shield' style='font-size:40px'
-            onclick="triggerVibration()"></i></a>
-      </div>
+
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active" onclick="triggerVibration()">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link" onclick="triggerVibration()">About</a></li>
-          <li class="nav__item"><a href="#service" class="nav__link" onclick="triggerVibration()">Skills</a></li>
-          <li class="nav__item"><a href="#mywork" class="nav__link" onclick="triggerVibration()">Projects</a></li>
-          <li class="nav__item"><a href="#myachievements" class="nav__link"
-              onclick="triggerVibration()">Achievements</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link" onclick="triggerVibration()">Get in Touch</a></li>
+          <li class="nav__item">
+            <a href="#home" class="nav__link active" onclick="triggerVibration()">
+              <i class="fas fa-home nav__icon"></i>
+              <span class="nav__text">Home</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link" onclick="triggerVibration()">
+              <i class="fas fa-user nav__icon"></i>
+              <span class="nav__text">About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#service" class="nav__link" onclick="triggerVibration()">
+              <i class="fas fa-cogs nav__icon"></i>
+              <span class="nav__text">Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#mywork" class="nav__link" onclick="triggerVibration()">
+              <i class="fas fa-project-diagram nav__icon"></i>
+              <span class="nav__text">Projects</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#myachievements" class="nav__link" onclick="triggerVibration()">
+              <i class="fas fa-trophy nav__icon"></i>
+              <span class="nav__text">Achievements</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" onclick="triggerVibration()">
+              <i class="fas fa-envelope nav__icon"></i>
+              <span class="nav__text">Contact</span>
+            </a>
+          </li>
         </ul>
       </div>
-      <!-- Theme Switcher -->
+
       <div class="theme-switch">
         <input type="checkbox" id="theme-toggle" class="theme-toggle">
         <label for="theme-toggle" class="theme-label">
-          <i class='bx bx-sun' onclick="triggerVibration()"></i>
-          <i class='bx bx-moon' onclick="triggerVibration()"></i>
+          <div class="toggle-wrapper">
+            <i class="fas fa-sun" onclick="triggerVibration()"></i>
+            <i class="fas fa-moon" onclick="triggerVibration()"></i>
+            <div class="toggle-sphere"></div>
+          </div>
         </label>
       </div>
+
       <div class="nav__toggle" id="nav-toggle">
         <i class='bx bx-menu' onclick="triggerVibration()"></i>
       </div>
@@ -73,8 +110,8 @@
       <div class="home__data reveal">
         <h1 class="home__title">Hi,<br>I am <span class="home__title-color"><b>MD. NAYAJ MONDAL</b></span></h1>
         <p class="home__description"><span>A Software Engineer in Making</span></p>
-        <a href="https://drive.google.com/file/d/1HrIDCDdD8Bem2ZwjilfSblH4zxW-Q38Y/view?usp=drive_link"
-          class="button" target="_blank" onclick="triggerVibration()">Download CV</a>
+        <a href="https://drive.google.com/file/d/1HrIDCDdD8Bem2ZwjilfSblH4zxW-Q38Y/view?usp=drive_link" class="button"
+          target="_blank" onclick="triggerVibration()">Download CV</a>
         <a href="https://drive.google.com/file/d/1KiYperwcPgJjgaqu0_FmYLKEgHymEme5/view?usp=drivesdk" class="button"
           target="_blank" onclick="triggerVibration()">Contact Details</a>
       </div>
@@ -256,7 +293,9 @@
 
       <div class="contact__container bd-grid">
         <form method="POST" name="google-sheet" id="contact-form" class="contact__form reveal">
-          <div id="res" style="color:darkgreen; font-size:14px; font-weight:bolder; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"></div>
+          <div id="res"
+            style="color:darkgreen; font-size:14px; font-weight:bolder; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+          </div>
           <div class="contact__input-group">
             <input type="text" id="name" name="Name" placeholder="Enter Your Name" class="contact__input"
               onclick="triggerVibration()" required>
@@ -290,36 +329,40 @@
         <p class="footer__description">Software Developer & Designer</p>
       </div>
       <div>
-        <h2 class="connect" onclick="triggerVibration()"><u>Connect With Me :</u></h2>
+      <h2 class="connect" onclick="triggerVibration()"><u>Connect With Me :</u></h2>
       </div>
-      <div class="footer__social">
 
-        <a href="https://github.com/mdnm18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-github' onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-linkedin' onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://www.discord.com/users/1241062535994806393" class="footer__icon" target="_blank" rel="noopener">
-          <i class="fa-brands fa-discord" onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://x.com/MD_N_M_18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-twitter' onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://www.instagram.com/md._n.m._india_18" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-instagram' onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://www.facebook.com/mdnayaj.mondal" class="footer__icon" target="_blank" rel="noopener">
-          <i class='bx bxl-facebook' onclick="triggerVibration()"></i>
-        </a>
-        <a href="https://www.t.me/Md_NM_18_indian" class="footer_icon" target="_blank" rel="noopener">
-          <i class="fa-brands fa-telegram" onclick="triggerVibration()"></i>
-        </a>
+      <div class="footer__content">
+        <div class="footer__social">
+          <a href="https://github.com/mdnm18" class="footer__icon" target="_blank" rel="noopener">
+            <i class='bx bxl-github' onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/md-nayaj-mondal" class="footer__icon" target="_blank" rel="noopener">
+            <i class='bx bxl-linkedin' onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://www.discord.com/users/1241062535994806393" class="footer__icon" target="_blank"
+            rel="noopener">
+            <i class="fa-brands fa-discord" onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://x.com/MD_N_M_18" class="footer__icon" target="_blank" rel="noopener">
+            <i class='bx bxl-twitter' onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://www.instagram.com/md._n.m._india_18" class="footer__icon" target="_blank" rel="noopener">
+            <i class='bx bxl-instagram' onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://www.facebook.com/mdnayaj.mondal" class="footer__icon" target="_blank" rel="noopener">
+            <i class='bx bxl-facebook' onclick="triggerVibration()"></i>
+          </a>
+          <a href="https://www.t.me/Md_NM_18_indian" class="footer__icon" target="_blank" rel="noopener">
+            <i class="fa-brands fa-telegram" onclick="triggerVibration()"></i>
+          </a>
+        </div>
       </div>
     </div>
-
     <p class="footer__copy">&#169; 2025 MD NAYAJ MONDAL. All rights reserved</p>
   </footer>
+
+
   <script src="script.js"></script>
 </body>
 
