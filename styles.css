@@ -183,7 +183,6 @@ html {
   transition: all 0.1s ease;
 }
 
-
 .bx-sun {
   display: none;
 }
@@ -430,11 +429,11 @@ img {
   .clock-container {
     display: inline-block; /* Hide clock on mobile for better space utilization */
     margin-right: 90px;
-    margin-top:24px;
+    margin-top: 24px;
   }
-  .theme-switch{
-    margin-right:10px;
-    margin-left:10px;
+  .theme-switch {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -843,6 +842,46 @@ textarea.contact__input {
   height: 200px;
   color: black;
   font-weight: bold;
+}
+
+.contact__input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact__input-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+.contact__input-group textarea + i {
+  top: 25px;
+  transform: none;
+}
+.contact__input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  /* background: transparent; */
+  background-color: beige;
+}
+.contact__input:focus {
+  outline: none;
+  border-color: #6b46c1;
+  box-shadow: 0 5px 15px rgba(107, 70, 193, 0.15);
+}
+.contact__input:focus + i {
+  color: #6b46c1;
+}
+textarea.contact__input {
+  min-height: 150px;
+  resize: none;
 }
 
 /* Button */
@@ -1499,8 +1538,8 @@ textarea.contact__input {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    margin-left:5px;
-    margin-right:5px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .connect {
