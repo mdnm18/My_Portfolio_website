@@ -84,11 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   themeToggle.addEventListener("change", toggleTheme);
+
   // Remove preloader
-  const preloader = document.getElementById("preloader");
   window.addEventListener("load", () => {
-    preloader.style.opacity = "0";
-    setTimeout(() => preloader.remove(), 500);
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("hidden");
+
+    // Display main content after loader
+    const mainContent = document.querySelector("main");
+    mainContent.style.display = "block";
   });
 
   // Mobile menu toggle
@@ -231,7 +235,7 @@ form.addEventListener("submit", async (e) => {
 });
 
 // Add CSS for spinner
-const style = document.createElement('styles');
+const style = document.createElement("styles");
 style.innerHTML = `
   .spinner {
     border: 2px solid rgba(255, 255, 255, 0.3); 

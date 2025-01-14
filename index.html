@@ -23,14 +23,13 @@
 <body>
   <!-- Preloader -->
   <div class="loader" id="preloader">
-    <svg width="50" height="50" viewBox="0 0 50 50">
-      <circle cx="25" cy="25" r="20" fill="none" stroke="#9a26dc" stroke-width="5">
-        <animate attributeName="stroke-dasharray" dur="1.5s" repeatCount="indefinite" values="1,150;90,150;90,150" />
-        <animate attributeName="stroke-dashoffset" dur="1.5s" repeatCount="indefinite" values="0;-35;-124" />
-      </circle>
-    </svg>
+    <div class="animated-loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   </div>
-
 
   <!-- Header -->
   <header class="l-header">
@@ -164,7 +163,8 @@
             Hello 🤗! I am MD Nayaj Mondal, an 18-year-old student from Malda, West Bengal, India.<br>
 
             I successfully completed my <b>Secondary Examination</b> with an A+ grade under the West Bengal Board of
-            Secondary Education (WBBSE) in 2022 from Guidance Academy (Jangipur Campus). I went on to achieve an A grade in my <b>Higher
+            Secondary Education (WBBSE) in 2022 from Guidance Academy (Jangipur Campus). I went on to achieve an A grade
+            in my <b>Higher
               Secondary Examination</b> under the West Bengal Council of Higher Secondary Education (WBCHSE) in 2024,
             also from
             <b>Guidance Academy (Jangipur Campus)</b>, Murshidabad, West Bengal.<br>
@@ -315,7 +315,7 @@
           </div>
           <button type="submit" class="button contact__button" value="submit_form" name="Submit"
             onclick="triggerVibration()">
-            Send Message 
+            Send Message
             <i class="fas fa-paper-plane"></i>
           </button>
         </form>
@@ -330,7 +330,7 @@
         <p class="footer__description">Software Developer & Designer</p>
       </div>
       <div>
-      <h2 class="connect" onclick="triggerVibration()"><u>Connect With Me :</u></h2>
+        <h2 class="connect" onclick="triggerVibration()"><u>Connect With Me :</u></h2>
       </div>
 
       <div class="footer__content">
