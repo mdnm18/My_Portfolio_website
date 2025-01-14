@@ -493,9 +493,12 @@ img {
   padding: 0 3px 3px 3px;
 }
 
-main {
-  padding-left: 55px;
+@media (min-width: 768px) and (max-width: 1180px) {
+  main {
+    padding-left: 55px;
+  }
 }
+
 /* Home */
 .home {
   min-height: calc(100vh - var(--header-height));
