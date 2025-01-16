@@ -2,6 +2,7 @@
 <html lang="en" data-theme="light">
 
 <head>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -9,14 +10,21 @@
   <meta name="keywords" content="web development, design, portfolio, UI/UX, app design, MD NAYAJ MONDAL">
   <meta name="author" content="MD NAYAJ MONDAL">
   <meta name="theme-color" content="#9a26dc">
+
+  <!-- Open Graph Tags -->
   <meta property="og:title" content="MD NAYAJ MONDAL | Portfolio">
   <meta property="og:description"
     content="Web Developer and Designer specializing in responsive web design, UI/UX, and application development">
   <meta property="og:type" content="website">
-  <link rel="icon" href="IMAGES THAT ARE USED IN MY PROTFOLIO\avatar.png" type="image/png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="IMAGES THAT ARE USED IN MY PORTFOLIO/avatar.png" type="image/png">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
   <title>MD NAYAJ MONDAL | Portfolio</title>
 </head>
 
@@ -31,20 +39,23 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header Navigation -->
   <header class="l-header">
     <nav class="nav bd-grid">
+      <!-- Brand Logo -->
       <div class="nav__brand">
         <a href="index.html" class="nav__logo">
           <i class='fas fa-user-shield nav__logo-icon' onclick="triggerVibration()"></i>
         </a>
       </div>
 
+      <!-- Clock Widget -->
       <div class="clock-container">
         <div id="clock" onclick="triggerVibration()">00 : 00 : 00</div>
         <div class="date" id="date" onclick="triggerVibration()">Loading...</div>
       </div>
 
+      <!-- Navigation Menu -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -86,6 +97,7 @@
         </ul>
       </div>
 
+      <!-- Theme Switch -->
       <div class="theme-switch">
         <input type="checkbox" id="theme-toggle" class="theme-toggle">
         <label for="theme-toggle" class="theme-label">
@@ -97,31 +109,34 @@
         </label>
       </div>
 
+      <!-- Mobile Menu Toggle -->
       <div class="nav__toggle" id="nav-toggle">
         <i class='bx bx-menu' onclick="triggerVibration()"></i>
       </div>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main class="l-main">
     <!-- Home Section -->
     <section class="home bd-grid section" id="home">
       <div class="home__data reveal">
         <h1 class="home__title">Hi,<br>I am <span class="home__title-color"><b>MD. NAYAJ MONDAL</b></span></h1>
         <p class="home__description"><span>A Software Engineer in Making</span></p>
-        <a href="https://drive.google.com/file/d/1HrIDCDdD8Bem2ZwjilfSblH4zxW-Q38Y/view?usp=drive_link" class="button"
+        <a href="https://drive.google.com/file/d/1HrIDCDdD8Bem2ZwjilfSblH4zxW-Q38Y/view?usp=drive_link" class="button" id="cv"
           target="_blank" onclick="triggerVibration()">Download CV</a>
         <a href="https://drive.google.com/file/d/1KiYperwcPgJjgaqu0_FmYLKEgHymEme5/view?usp=drivesdk" class="button"
           target="_blank" onclick="triggerVibration()">Contact Details</a>
       </div>
 
       <div class="home__img reveal">
-        <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\IMG_0565.DNG" alt="bb.png">
+        <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/IMG_0565.DNG" alt="bb.png">
       </div>
 
+      <!-- Social Media Links -->
       <div class="home__social">
-        <a href="https://www.md.n.m.pius18@gmail.com" class="home__social-icon" target="_blank" rel="noopener">
-          <i class="fa-duotone fa-solid fa-envelope" onclick="triggerVibration()"></i>
+        <a href="mailto:md.n.m.pius18@gmail.com" class="home__social-icon" rel="noopener">
+          <i class="fa-solid fa-envelope" onclick="triggerVibration()"></i>
         </a>
         <a href="https://github.com/mdnm18" class="home__social-icon" target="_blank" rel="noopener">
           <i class='bx bxl-github' onclick="triggerVibration()"></i>
@@ -154,7 +169,7 @@
 
       <div class="about__container bd-grid">
         <div class="about__img reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\IMG_0553.DNG" alt="ppp.jpg">
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/IMG_0553.DNG" alt="ppp.jpg">
         </div>
 
         <div class="about__content reveal">
@@ -164,25 +179,23 @@
 
             I successfully completed my <b>Secondary Examination</b> with an A+ grade under the West Bengal Board of
             Secondary Education (WBBSE) in 2022 from Guidance Academy (Jangipur Campus). I went on to achieve an A grade
-            in my <b>Higher
-              Secondary Examination</b> under the West Bengal Council of Higher Secondary Education (WBCHSE) in 2024,
-            also from
-            <b>Guidance Academy (Jangipur Campus)</b>, Murshidabad, West Bengal.<br>
+            in my <b>Higher Secondary Examination</b> under the West Bengal Council of Higher Secondary Education
+            (WBCHSE) in 2024,
+            also from <b>Guidance Academy (Jangipur Campus)</b>, Murshidabad, West Bengal.<br>
 
-            In addition, I have completed a <b>Diploma in Computer Application</b> under the authorization of the “North
-            Bengal Society for Computer Education” at ITF Computer World Institute for the session 2022-2023.<br>
+            In addition, I have completed a <b>Diploma in Computer Application</b> under the authorization of the "North
+            Bengal Society for Computer Education" at ITF Computer World Institute for the session 2022-2023.<br>
 
             Currently, I am pursuing a <b>B.Tech. degree in Computer Science and Engineering (CSE)</b> at <b>SRM
               Institute of Science & Technology (KTR Campus)</b>, Chennai, Tamil Nadu, India.
           </p>
           <p class="about__text">
             I am a dynamic web developer with a passion for crafting immersive digital experiences that captivate and
-            inspire.
-            Blending a keen eye for design with a deep love for coding, I transform ideas into interactive realities.
-            Proficient in
-            both <b>front-end</b> artistry and <b>back-end</b> precision, I deliver solutions that seamlessly merge
-            functionality
-            with stunning visual appeal.
+            inspire. Blending a keen eye for design with a deep love for coding, I transform ideas into interactive
+            realities.
+            Proficient in both <b>front-end</b> artistry and <b>back-end</b> precision, I deliver solutions that
+            seamlessly merge
+            functionality with stunning visual appeal.
           </p>
         </div>
       </div>
@@ -198,8 +211,7 @@
           <h3 class="service__title">Web Design</h3>
           <p class="service__description">
             Creating visually striking, seamlessly intuitive, and performance-driven websites designed to leave a
-            lasting impression
-            and elevate user experiences.
+            lasting impression and elevate user experiences.
           </p>
         </div>
 
@@ -217,8 +229,7 @@
           <h3 class="service__title">UI/UX Design</h3>
           <p class="service__description">
             Crafting intuitive user experiences and visually compelling interfaces that drive engagement, foster
-            satisfaction, and
-            elevate digital interactions.
+            satisfaction, and elevate digital interactions.
           </p>
         </div>
       </div>
@@ -230,17 +241,17 @@
 
       <div class="work__container bd-grid">
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\6.jpg" alt="Project 1" class="work__img"
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/6.jpg" alt="Project 1" class="work__img"
             onclick="triggerVibration()">
           <div class="work__overlay">
-            <h3 class="work__title">Web Development </h3>
+            <h3 class="work__title">Web Development</h3>
             <a href="https://github.com/mdnm18?tab=repositories" class="work__link" target="_blank"
               onclick="triggerVibration()">View Details</a>
           </div>
         </div>
 
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\3.jpg" alt="Project 2" class="work__img"
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/3.jpg" alt="Project 2" class="work__img"
             onclick="triggerVibration()">
           <div class="work__overlay">
             <h3 class="work__title">App Development</h3>
@@ -250,7 +261,7 @@
         </div>
 
         <div class="work__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\4.jpg" alt="Project 3" class="work__img"
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/4.jpg" alt="Project 3" class="work__img"
             onclick="triggerVibration()">
           <div class="work__overlay">
             <h3 class="work__title">UI/UX Design</h3>
@@ -261,13 +272,13 @@
       </div>
     </section>
 
-    <!-- certificates Section-->
-
+    <!-- Certificates Section -->
     <section class="Certificate section" id="myachievements">
       <h2 class="section-title reveal" onclick="triggerVibration()">My Certificates</h2>
+
       <div class="certificate__container bd-grid">
         <div class="certificate__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\9.jpg" alt="Technical Certificate" class="certificate__img"
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/9.jpg" alt="Technical Certificate" class="certificate__img"
             onclick="triggerVibration()">
           <div class="certificate__overlay">
             <h3 class="certificate__title"><b>TECHNICAL CERTIFICATES</b></h3>
@@ -275,8 +286,9 @@
               target="_blank" onclick="triggerVibration()">View All Certificates</a>
           </div>
         </div>
+
         <div class="certificate__card reveal">
-          <img src="IMAGES THAT ARE USED IN MY PROTFOLIO\1.jpg" alt="Non-Technical Certificate" class="certificate__img"
+          <img src="IMAGES THAT ARE USED IN MY PORTFOLIO/1.jpg" alt="Non-Technical Certificate" class="certificate__img"
             onclick="triggerVibration()">
           <div class="certificate__overlay">
             <h3 class="certificate__title"><b>NON-TECHNICAL CERTIFICATES</b></h3>
@@ -296,23 +308,32 @@
           <div id="res"
             style="color:darkgreen; font-size:14px; font-weight:bolder; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
           </div>
+
           <div class="contact__input-group">
             <input type="text" id="name" name="Name" placeholder="Enter Your Name" class="contact__input"
-              onclick="triggerVibration()" required> <i class="fas fa-user"></i>
+              onclick="triggerVibration()" required>
+            <i class="fas fa-user"></i>
           </div>
+
           <div class="contact__input-group">
-            <input type="email" id="email" name="Email" placeholder="Enter Your Email Id" class="contact__input"
-              onclick="triggerVibration()" required> <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Enter Your Email Id" class="contact__input" onclick="triggerVibration()" required>
+            <i class="fas fa-envelope"></i>
           </div>
+
           <div class="contact__input-group">
-            <input type="tel" id="ph" name="Phone_No" placeholder="Enter Your Phone Number" class="contact__input"
-              onclick="triggerVibration()" required> <i class="fas fa-phone"></i>
+            <input type="tel" id="ph" name="Phone_No" pattern="[6-9]{1}[0-9]{9}" placeholder="Enter Your Phone Number"
+              class="contact__input" onclick="triggerVibration()" required>
+            <i class="fas fa-phone"></i>
           </div>
+
           <div class="contact__input-group">
             <textarea id="message" name="Messages"
               placeholder="Type Your Message or Feedback on the basis of your User Experience" class="contact__input"
-              row="4" onclick="triggerVibration()" required></textarea> <i class="fas fa-message"></i>
+              row="4" onclick="triggerVibration()" required></textarea>
+            <i class="fas fa-message"></i>
           </div>
+
           <button type="submit" class="button contact__button" value="submit_form" name="Submit"
             onclick="triggerVibration()">
             Send Message
@@ -322,6 +343,7 @@
       </div>
     </section>
   </main>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__container bd-grid">
@@ -329,6 +351,7 @@
         <h3 class="footer__title" onclick="triggerVibration()">MD NAYAJ MONDAL</h3>
         <p class="footer__description">Software Developer & Designer</p>
       </div>
+
       <div>
         <h2 class="connect" onclick="triggerVibration()"><u>Connect With Me :</u></h2>
       </div>
@@ -360,10 +383,11 @@
         </div>
       </div>
     </div>
+
     <p class="footer__copy">&#169; 2025 MD NAYAJ MONDAL. All rights reserved</p>
   </footer>
 
-
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 
