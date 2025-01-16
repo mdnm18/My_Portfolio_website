@@ -473,11 +473,11 @@ img {
   left: 0;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .nav__menu {
-    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
-  }
-}
+/* @supports (-webkit-touch-callout: none) { */
+/* .nav__menu { */
+/* padding-bottom: calc(2rem + env(safe-area-inset-bottom)); */
+/* } */
+/* } */
 
 .clock-container {
   background: rgba(255, 255, 255, 0.1);
@@ -1011,13 +1011,13 @@ input[type="radio"] {
   transition: 0.3s;
 }
 
-@media(min-width:767px) and (max-width:835px){
-  .button{
-    display:flex;
+@media (min-width: 767px) and (max-width: 835px) {
+  .button {
+    display: flex;
     justify-content: center;
     justify-items: center;
   }
-  .nav{
+  .nav {
     margin-top: 20px;
   }
 }
@@ -1752,5 +1752,28 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: 767px) and(max-width:1050px) {
+  .nav {
+    margin-top: 20px;
+  }
+
+  .footer__social {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .connect {
+    text-align: center;
+    display: block;
+    position: static;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
