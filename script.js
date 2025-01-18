@@ -53,7 +53,7 @@ const triggerVibration = () => {
   if (!("ontouchstart" in window)) return;
 
   if (window.navigator.vibrate) {
-    window.navigator.vibrate([40]);
+    window.navigator.vibrate([50]);
   } else {
     console.warn("Vibration API not supported by your browser!");
   }
@@ -276,4 +276,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Display main content
   const mainContent = document.querySelector("main");
   mainContent.style.display = "block";
+});
+
+// Scroll to Top Button
+const scrollTopBtn = document.getElementById("scroll-top");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 560) {
+    scrollTopBtn.classList.add("show-scroll");
+  } else {
+    scrollTopBtn.classList.remove("show-scroll");
+  }
 });
