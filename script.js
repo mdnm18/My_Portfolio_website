@@ -53,7 +53,7 @@ const triggerVibration = () => {
   if (!("ontouchstart" in window)) return;
 
   if (window.navigator.vibrate) {
-    window.navigator.vibrate([60]);
+    window.navigator.vibrate([50]);
   } else {
     console.warn("Vibration API not supported by your browser!");
   }
