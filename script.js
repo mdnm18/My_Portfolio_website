@@ -53,11 +53,16 @@ const triggerVibration = () => {
   if (!("ontouchstart" in window)) return;
 
   if (window.navigator.vibrate) {
-    window.navigator.vibrate([50]);
+    window.navigator.vibrate([60]);
   } else {
     console.warn("Vibration API not supported by your browser!");
   }
 };
+
+// Add vibration to all interactive elements
+document.querySelectorAll("a, button, .nav__link, i").forEach((element) => {
+  element.addEventListener("click", triggerVibration);
+});
 
 // Feature: Mouse Trail Effect
 const createTrail = (e) => {
